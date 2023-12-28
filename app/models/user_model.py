@@ -9,7 +9,7 @@ class User(Document):
     
     user_id: UUID = Field(default_factory=uuid4)
     username: Indexed(str, unique=True)    
-    email: Indexed = Field(EmailStr, unique=True)
+    email: Indexed (EmailStr, unique=True)
     password: str
     first_name: Optional[str] = None
     last_name: Optional[str] = None

@@ -1,5 +1,6 @@
 from schemas.user_schema import UserAuth
 from models.user_model import User
+from core.security import get_password
 
 class UserService:
     """Class for user service"""
@@ -11,6 +12,10 @@ class UserService:
         user = User(
             username=user.username,
             email=user.email,
-            password=user.password
+            password=get_password(user.password)
         )
+        
+        await user.save()
+        return user
+    
         
