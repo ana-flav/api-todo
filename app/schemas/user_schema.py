@@ -12,3 +12,10 @@ class UserAuth(BaseModel):
     last_name: Optional[str] = Field(None, min_length=5, max_length=50, description="Last name")
     
     
+class UserDetail(BaseModel):
+    user_id: UUID
+    username: str
+    email: EmailStr
+    first_name: Optional[str]
+    last_name: Optional[str]
+    disabled: Optional[bool]
