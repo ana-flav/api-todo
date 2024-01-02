@@ -1,5 +1,4 @@
 from pydantic import BaseModel, EmailStr, Field
-
 from uuid import UUID
 from typing import Optional
 
