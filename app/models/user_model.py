@@ -34,6 +34,6 @@ class User(Document):
         return self.id.generation_time
     
     @classmethod
-    async def by_email(self, email: str) -> "User":
-        return await self.find_one(self.email == email) 
+    async def by_email(cls, email: str) -> "User":
+        return await cls.find_one(cls.email == email) 
     

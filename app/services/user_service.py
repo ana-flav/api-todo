@@ -2,7 +2,7 @@ from schemas.user_schema import UserAuth
 from models.user_model import User
 from core.security import get_password, verify_password
 from typing import Optional
-
+from pydantic import EmailStr
 
 class UserService:
     """Class for user service"""
@@ -37,4 +37,9 @@ class UserService:
         except Exception as e:
             print(e)
         
+    async def get_user_by_email(email: EmailStr):
+        """Get user by email"""
+        
+        return await User.by_email(email=email)
+    
         

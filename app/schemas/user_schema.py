@@ -9,14 +9,7 @@ class UserAuth(BaseModel):
     email: EmailStr = Field(...,description="User email") 
     username: str = Field(..., min_length=5, max_length=50, description="Username") 
     password: str = Field(..., min_length=5, max_length=50,  description="User password")
- 
-class UserDetail(BaseModel):
-    """Class for user details"""
+    first_name: Optional[str] = Field(None, min_length=5, max_length=50, description="First name")
+    last_name: Optional[str] = Field(None, min_length=5, max_length=50, description="Last name")
     
-    user_id: UUID
-    username: str
-    email: EmailStr
-    first_name: Optional[str]
-    last_name: Optional[str]
-    is_active: Optional[bool]
     
