@@ -1,3 +1,4 @@
+from typing import Any, Union
 from passlib.context import CryptContext
 from datetime import datetime, timedelta
 from jose import JWTError, jwt
@@ -14,8 +15,8 @@ def get_password(password: str) -> str:
 def verify_password(password: str, hashed_password: str) -> bool:
     return password_context.verify(password, hashed_password)
 
-def create_access_token(data: dict, expires_delta: timedelta | None = None):
-    to_encode = data.copy()
+def create_access_token(subject: Union[str, Any], expires_delta: timedelta | None = None):
+    to_encode = {"sub": str(subject)}
     
     if expires_delta:
         expire = datetime.utcnow() + expires_delta
@@ -26,8 +27,8 @@ def create_access_token(data: dict, expires_delta: timedelta | None = None):
     
     return encoded_jwt
 
-def create_refresh_token(data: dict, expires_delta: timedelta | None = None):
-    to_encode = data.copy()
+def create_refresh_token(subject: Union[str, Any], expires_delta: timedelta | None = None):
+    to_encode = {"sub": str(subject)}
     
     if expires_delta:
         expire = datetime.utcnow() + expires_delta
