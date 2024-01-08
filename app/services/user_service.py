@@ -5,6 +5,7 @@ from core.security import get_password, verify_password
 from typing import Optional
 from pydantic import EmailStr
 from uuid import UUID
+from datetime import datetime, date
 
 class UserService:
     """Class for user service"""
@@ -12,11 +13,11 @@ class UserService:
     @staticmethod
     async def create_user(user: UserAuth):
         """Create user"""
-        
+
         user = User(
             username=user.username,
             email=user.email,
-            password=get_password(user.password)
+            password=get_password(user.password),
         )
     
         await user.save()

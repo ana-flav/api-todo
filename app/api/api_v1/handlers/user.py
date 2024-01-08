@@ -27,7 +27,7 @@ async def detail_user(email: EmailStr):
         user = UserService.get_user_by_email(email)
         if user:
             return await user
-        raise HTTPException(status_code=404, detail="User not found")
+        raise HTTPException(status_code=404, detail="User not found" )
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
         

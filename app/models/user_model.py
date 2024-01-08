@@ -14,7 +14,7 @@ class User(Document):
     first_name: Optional[str] = None
     last_name: Optional[str] = None
     is_active: bool = True
-    date_of_birthday: Optional[date] = None   
+    created_on: datetime = Field(default_factory=datetime.now)  
      
     def __str__(self) -> str:
         return self.email
