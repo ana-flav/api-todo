@@ -1,26 +1,15 @@
-nnotated-types==0.6.0
-anyio @ file:///C:/ci_311/anyio_1676425491996/work/dist
-argon2-cffi @ file:///opt/conda/conda-bld/argon2-cffi_1645000214183/work
-argon2-cffi-bindings @ file:///C:/ci_311/argon2-cffi-bindings_1676424443321/work
-asttokens @ file:///opt/conda/conda-bld/asttokens_1646925590279/work
-async-lru @ file:///C:/b/abs_e0hjkvwwb5/croot/async-lru_1699554572212/work
-attrs @ file:///C:/b/abs_35n0jusce8/croot/attrs_1695717880170/work
-Babel @ file:///C:/ci_311/babel_1676427169844/work
-backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
-bcrypt==4.0.1
+annotated-types==0.6.0
+anyio==4.2.0
+bcrypt==4.1.2
 beanie==1.24.0
-beautifulsoup4 @ file:///C:/b/abs_0agyz1wsr4/croot/beautifulsoup4-split_1681493048687/work
-bleach @ file:///opt/conda/conda-bld/bleach_1641577558959/work
-Brotli @ file:///C:/ci_311/brotli-split_1676435766766/work
-certifi @ file:///home/conda/feedstock_root/build_artifacts/certifi_1700303426725/work/certifi
-cffi @ file:///C:/b/abs_924gv1kxzj/croot/cffi_1700254355075/work
+click==8.1.7
+colorama==0.4.6
 dnspython==2.4.2
 ecdsa==0.18.0
 email-validator==2.1.0.post1
-executing @ file:///opt/conda/conda-bld/executing_1646925071911/work
 fastapi==0.108.0
-fastjsonschema @ file:///C:/ci_311/python-fastjsonschema_1679500568724/work
 h11==0.14.0
+idna==3.6
 lazy-model==0.2.0
 motor==3.3.2
 passlib==1.7.4
@@ -28,41 +17,15 @@ pyasn1==0.5.1
 pydantic==2.5.3
 pydantic-settings==2.1.0
 pydantic_core==2.14.6
-Pygments @ file:///C:/b/abs_fay9dpq4n_/croot/pygments_1684279990574/work
 pymongo==4.6.1
-pyOpenSSL @ file:///C:/b/abs_08f38zyck4/croot/pyopenssl_1690225407403/work
-PySocks @ file:///C:/ci_311/pysocks_1676425991111/work
-python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
-python-decouple @ file:///home/conda/feedstock_root/build_artifacts/python-decouple_1677787101602/work
+python-decouple==3.8
 python-dotenv==1.0.0
 python-jose==3.3.0
-python-json-logger @ file:///C:/b/abs_cblnsm6puj/croot/python-json-logger_1683824130469/work
-pytz @ file:///C:/b/abs_19q3ljkez4/croot/pytz_1695131651401/work
-pywin32==305.1
-pywinpty @ file:///C:/ci_311/pywinpty_1677707791185/work/target/wheels/pywinpty-2.0.10-cp311-none-win_amd64.whl
-PyYAML @ file:///C:/b/abs_782o3mbw7z/croot/pyyaml_1698096085010/work
-pyzmq @ file:///C:/b/abs_655zk4a3s8/croot/pyzmq_1686601465034/work
-referencing @ file:///C:/b/abs_09f4hj6adf/croot/referencing_1699012097448/work
-requests @ file:///C:/b/abs_316c2inijk/croot/requests_1690400295842/work
-rfc3339-validator @ file:///C:/b/abs_ddfmseb_vm/croot/rfc3339-validator_1683077054906/work
-rfc3986-validator @ file:///C:/b/abs_6e9azihr8o/croot/rfc3986-validator_1683059049737/work
-rpds-py @ file:///C:/b/abs_76j4g4la23/croot/rpds-py_1698947348047/work
+python-multipart==0.0.6
 rsa==4.9
-Send2Trash @ file:///C:/b/abs_08dh49ew26/croot/send2trash_1699371173324/work
-six @ file:///tmp/build/80754af9/six_1644875935023/work
-sniffio @ file:///C:/ci_311/sniffio_1676425339093/work
-soupsieve @ file:///C:/b/abs_bbsvy9t4pl/croot/soupsieve_1696347611357/work
-stack-data @ file:///opt/conda/conda-bld/stack_data_1646927590127/work
+six==1.16.0
+sniffio==1.3.0
 starlette==0.32.0.post1
-terminado @ file:///C:/ci_311/terminado_1678228513830/work
-tinycss2 @ file:///C:/ci_311/tinycss2_1676425376744/work
 toml==0.10.2
-tornado @ file:///C:/b/abs_0cbrstidzg/croot/tornado_1696937003724/work
-traitlets @ file:///C:/ci_311/traitlets_1676423290727/work
 typing_extensions==4.9.0
-urllib3 @ file:///C:/b/abs_9cmlsrm3ys/croot/urllib3_1698257595508/work
 uvicorn==0.25.0
-wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
-webencodings==0.5.1
-websocket-client @ file:///C:/ci_311/websocket-client_1676426063281/work
-win-inet-pton @ file:///C:/ci_311/win_inet_pton_1676425458225/work
