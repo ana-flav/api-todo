@@ -19,5 +19,5 @@ class UserDetail(BaseModel):
     email: EmailStr
     first_name: Optional[str]
     last_name: Optional[str]
-    disabled: Optional[bool]
-    created_on: datetime
+    is_active: Optional[bool]
+    created_at: datetime
