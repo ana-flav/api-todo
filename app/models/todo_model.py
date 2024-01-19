@@ -9,12 +9,12 @@ from .user_model import User
 class Todo(Document):
     """Todo model"""
     
-    todo_id: UUID = Field(default_factory=uuid4, unique=True)
+    todo_id: UUID = Field(UUID)
     status: bool = False
-    title: Indexed[str]
-    description: Indexed[str]
-    created_at: datetime = Field(default_factory=datetime.utcnow)
-    updated_at: datetime = Field(default_factory=datetime.utcnow)
+    title: Indexed(str)
+    description: Indexed(str)
+    created_at: datetime = Field(default=datetime.now)
+    updated_at: datetime = Field(default=datetime.now)
     owner: Link[User]
 
     def __repr__(self) -> str:

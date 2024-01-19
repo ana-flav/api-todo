@@ -7,14 +7,14 @@ from typing import Optional
 class User(Document):
     """User model"""
     
-    user_id: UUID = Field(uuid4, default_factory=uuid4)
+    user_id: UUID = Field(UUID)
     username: Indexed(str, unique=True)    
     email: Indexed (EmailStr, unique=True)
     password: str
     first_name: Optional[str] = None
     last_name: Optional[str] = None
     is_active: bool = True
-    created_at: datetime = Field(default_factory=datetime.now)  
+    created_at: datetime = Field(default=datetime.now)  
      
     def __str__(self) -> str:
         return self.email

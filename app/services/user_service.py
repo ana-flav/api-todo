@@ -19,7 +19,7 @@ class UserService:
             email=user.email,
             password=get_password(user.password),
         )
-    
+        breakpoint()
         await user.save()
         return user
     
