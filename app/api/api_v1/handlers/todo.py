@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends, HTTPException, status
-from schemas.todo_schema import TodoDetail, TodoCreate
+from schemas.todo_schema import TodoDetail, TodoCreate, TodoUpdate
 from models.user_model import User
 from api.dependencies.user_deps import get_current_user
 from services.todo_service import TodoService
@@ -23,3 +23,8 @@ async def create_todo(data: TodoCreate, current_user: User = Depends(get_current
     
 # @todo_router.get('/detail', summary="note Detail", response_model=TodoDetail)
 # async def detail_todo()
+
+
+@todo_router.put('/update/{todo_id}', summary="Note Update", response_model=TodoUpdate)
+async def update_todo(data: TodoUpdate, current_user: User = Depends(get_current_user)):
+    pass

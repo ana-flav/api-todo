@@ -1,7 +1,7 @@
 from models.user_model import User 
 from models.todo_model import Todo
 from typing import List
-from schemas.todo_schema import TodoCreate
+from schemas.todo_schema import TodoCreate, TodoUpdate
 
 
 class TodoService:
@@ -23,5 +23,9 @@ class TodoService:
                 )
         breakpoint()
         return await todo.insert()
+    
+    # @staticmethod
+    # async def update_todo(user: User, data: TodoUpdate):
+        
     
     
